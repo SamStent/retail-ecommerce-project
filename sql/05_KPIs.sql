@@ -35,6 +35,3 @@ FROM order_items;
 SELECT month, revenue
 FROM vw_monthly_sales
 ORDER BY month;
-
-
-
