@@ -1,90 +1,134 @@
-\## 📊 Key Performance Indicators (KPIs)
+# 📦 Retail E‑Commerce Analytics
+Análisis completo de ventas, clientes y productos para un negocio de e‑commerce.
 
+---
 
+## 🧭 1. **Descripción del proyecto**
 
-Este proyecto analiza un dataset de ventas e‑commerce y genera métricas clave para entender el rendimiento del negocio.
+Este proyecto desarrolla un análisis integral de un dataset de e‑commerce utilizando:
 
+- PostgreSQL para modelado y vistas analíticas  
+- Python (pandas, SQLAlchemy, Plotly) para análisis y visualización  
+- JupyterLab como entorno de trabajo  
+- Kaleido para exportación de gráficos  
+- GitHub como repositorio de portfolio  
 
+El objetivo es construir un flujo analítico profesional, modular y reproducible, que permita entender el rendimiento del negocio y comunicar insights ejecutivos de forma clara.
 
-\### 🛒 Ventas
+---
 
-\- \*\*Revenue total:\*\* `<3966544.57 €>`
+## 🗂 2. **Estructura del repositorio**
 
-\- \*\*Número total de órdenes:\*\* `<100>`
+```
+retail-ecommerce-project/
+│
+├── assets/                     # Gráficos exportados para el README
+│   ├── revenue_mensual.png
+│   ├── revenue_ciudad.png
+│   ├── top_productos.png
+│
+├── notebooks/
+│   ├── 01_eda.ipynb            # Exploración inicial
+│   └── 02_analysis.ipynb       # KPIs, análisis avanzado y storytelling
+│
+├── sql/
+│   ├── schema.sql              # Modelo relacional
+│   ├── views.sql               # Vistas analíticas
+│   └── 05_KPIs.sql             # Consultas de KPIs
+│
+└── README.md                   # Documentación del proyecto
+```
 
-\- \*\*Ticket promedio por orden:\*\* `<39665.44 €>`
+---
 
-\- \*\*Revenue promedio por cliente (LTV básico):\*\* `<40474.94 €>`
+## 📊 3. **KPIs ejecutivas**
 
+### 🛒 Ventas
+- **Revenue total:** 3,966,544.57  
+- **Número total de órdenes:** 100  
+- **Ticket promedio:** 39,665.44  
+- **LTV promedio (básico):** 40,474.94  
 
+### 👥 Clientes
+- **Número total de clientes:** *(calculado en notebook)*  
+- **Ciudad con mayor revenue:** Kolkata  
 
-\### 👥 Clientes
+### 📦 Productos
+**Top 5 productos por revenue:**
 
-\- \*\*Número total de clientes:\*\* `<X>`
+1. Smartphone — 113,810.50  
+2. Curtains — 110,013.00  
+3. Curtains — 109,630.75  
+4. Comics — 107,083.86  
+5. Curtains — 106,022.00  
 
-\- \*\*Ciudad con mayor revenue:\*\* `<Kolkata>`
+### ⭐ Ratings
+- **Rating promedio general:** 2.94 / 5  
+- **Categoría mejor valorada:** *(calculado en notebook)*  
 
+---
 
+## 📈 4. **Visualizaciones principales**
 
-\### 📦 Productos
+### **Revenue mensual**
+`[Parece que el resultado no era seguro para mostrar. ¡Cambiemos de enfoque y probemos algo diferente!]`
 
-\- \*\*Top 5 productos por revenue:\*\*
+### **Top productos por revenue**
+`[Parece que el resultado no era seguro para mostrar. ¡Cambiemos de enfoque y probemos algo diferente!]`
 
-&#x20; 1. `<Smartphone>` — `<113810.50 €>`
+### **Revenue por ciudad**
+`[Parece que el resultado no era seguro para mostrar. ¡Cambiemos de enfoque y probemos algo diferente!]`
 
-&#x20; 2. `<Curtains>` — `<110013.00 €>`
+---
 
-&#x20; 3. `<Curtains>` — `<109630.75 €>`
+## 🧠 5. **Storytelling del análisis**
 
-&#x20; 4. `<Comics>` — `<107083.86 €>`
+El análisis revela patrones clave del negocio:
 
-&#x20; 5. `<Curtains>` — `<106022.00 €>`
+### **1. Revenue sólido y estable**
+El negocio genera casi **4M** en revenue, con un ticket promedio alto.  
+Esto indica un catálogo de productos de valor medio‑alto.
 
+### **2. Concentración geográfica**
+**Kolkata** es la ciudad líder en revenue, seguida por Chennai.  
+Esto sugiere oportunidades para expandir campañas en ciudades con menor penetración.
 
+### **3. Categorías dominantes**
+Las categorías **Home**, **Books** y **Electronics** concentran la mayor parte del revenue.  
+El negocio debería reforzar inventario y promociones en estas líneas.
 
-\### ⭐ Ratings
+### **4. Estacionalidad moderada**
+El revenue mensual muestra picos en agosto–septiembre y febrero–marzo.  
+Esto puede relacionarse con campañas estacionales o ciclos de compra.
 
-\- \*\*Rating promedio general:\*\* `<2.94 / 5>`
+### **5. Distribución desigual del gasto**
+Un pequeño grupo de clientes genera una parte significativa del revenue.  
+Esto abre la puerta a estrategias de **retención y fidelización**.
 
-\- \*\*Categoría mejor valorada:\*\* `<Categoría>`
+---
 
+## 🛠 6. **Tecnologías utilizadas**
 
+- Python (pandas, SQLAlchemy, Plotly)  
+- PostgreSQL  
+- JupyterLab  
+- Kaleido  
+- Conda  
+- Git & GitHub  
 
-\### 📅 Tendencias
+---
 
-\- \*\*Revenue mensual:\*\* ver gráfico en el notebook  
+## 🚀 7. **Próximos pasos**
 
-\- \*\*Unidades vendidas por categoría:\*\* ver vistas SQL
+- Dashboard ligero en Python (Plotly Dash o Streamlit)  
+- Segmentación avanzada de clientes  
+- Modelos predictivos (LTV, churn, forecasting)  
 
+---
 
+## 👤 8. **Autor**
 
-\---
+**Federico Wuttke**  
+Proyecto desarrollado como parte de un portfolio profesional de análisis de datos.
 
-
-
-\# 🟦 ¿Qué hacemos ahora?
-
-
-
-Ya tenemos:
-
-
-
-✔ Vistas profesionales  
-
-✔ KPIs listos para el README  
-
-
-
-Nos quedan:
-
-
-
-\### ➤ Crear el notebook de análisis con gráficos (Plotly)  
-
-\### ➤ Preparar un dashboard (Power BI o Python)
-
-
-
-Decime cuál atacamos ahora y lo armamos.
-
+---
