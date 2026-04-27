@@ -1,23 +1,23 @@
-# 📦 Retail E‑Commerce Analytics
+# 📦 Retail E‑Commerce Analytics  
 Análisis completo de ventas, clientes y productos para un negocio de e‑commerce.
 
 ---
 
-## 🧭 1. **Descripción del proyecto**
+## 🧭 1. Descripción del proyecto
 
 Este proyecto desarrolla un análisis integral de un dataset de e‑commerce utilizando:
 
-- PostgreSQL para modelado y vistas analíticas  
-- Python (pandas, SQLAlchemy, Plotly) para análisis y visualización  
-- JupyterLab como entorno de trabajo  
-- Kaleido para exportación de gráficos  
-- GitHub como repositorio de portfolio  
+- **PostgreSQL** para modelado y vistas analíticas  
+- **Python** (pandas, SQLAlchemy, Plotly) para análisis y visualización  
+- **JupyterLab** como entorno de trabajo  
+- **Kaleido** para exportación de gráficos  
+- **GitHub** como repositorio de portfolio  
 
 El objetivo es construir un flujo analítico profesional, modular y reproducible, que permita entender el rendimiento del negocio y comunicar insights ejecutivos de forma clara.
 
 ---
 
-## 🗂 2. **Estructura del repositorio**
+## 🗂 2. Estructura del repositorio
 
 ```
 retail-ecommerce-project/
@@ -32,16 +32,20 @@ retail-ecommerce-project/
 │   └── 02_analysis.ipynb       # KPIs, análisis avanzado y storytelling
 │
 ├── sql/
-│   ├── schema.sql              # Modelo relacional
-│   ├── views.sql               # Vistas analíticas
-│   └── 05_KPIs.sql             # Consultas de KPIs
+│   ├── 01_schema.sql           # Modelo relacional
+│   ├── 03_analytics_queries.sql
+│   ├── 04_views.sql
+│   └── 05_KPIs.sql
+│
+├── src/
+│   └── load_data.py            # Script auxiliar
 │
 └── README.md                   # Documentación del proyecto
 ```
 
 ---
 
-## 📊 3. **KPIs ejecutivas**
+## 📊 3. KPIs ejecutivas
 
 ### 🛒 Ventas
 - **Revenue total:** 3,966,544.57  
@@ -53,7 +57,7 @@ retail-ecommerce-project/
 - **Número total de clientes:** *(calculado en notebook)*  
 - **Ciudad con mayor revenue:** Kolkata  
 
-### 📦 Productos
+### 📦 Productos  
 **Top 5 productos por revenue:**
 
 1. Smartphone — 113,810.50  
@@ -68,7 +72,9 @@ retail-ecommerce-project/
 
 ---
 
-## 📈 4. **Visualizaciones principales**
+## 📈 4. Visualizaciones principales
+
+> Las visualizaciones completas se encuentran en los notebooks y en la carpeta `assets/`.
 
 ### **Revenue mensual**
 `[Parece que el resultado no era seguro para mostrar. ¡Cambiemos de enfoque y probemos algo diferente!]`
@@ -81,33 +87,52 @@ retail-ecommerce-project/
 
 ---
 
-## 🧠 5. **Storytelling del análisis**
+## 🧠 5. Storytelling del análisis
 
 El análisis revela patrones clave del negocio:
 
-### **1. Revenue sólido y estable**
+### **1. Revenue sólido y estable**  
 El negocio genera casi **4M** en revenue, con un ticket promedio alto.  
 Esto indica un catálogo de productos de valor medio‑alto.
 
-### **2. Concentración geográfica**
+### **2. Concentración geográfica**  
 **Kolkata** es la ciudad líder en revenue, seguida por Chennai.  
 Esto sugiere oportunidades para expandir campañas en ciudades con menor penetración.
 
-### **3. Categorías dominantes**
+### **3. Categorías dominantes**  
 Las categorías **Home**, **Books** y **Electronics** concentran la mayor parte del revenue.  
 El negocio debería reforzar inventario y promociones en estas líneas.
 
-### **4. Estacionalidad moderada**
+### **4. Estacionalidad moderada**  
 El revenue mensual muestra picos en agosto–septiembre y febrero–marzo.  
 Esto puede relacionarse con campañas estacionales o ciclos de compra.
 
-### **5. Distribución desigual del gasto**
+### **5. Distribución desigual del gasto**  
 Un pequeño grupo de clientes genera una parte significativa del revenue.  
 Esto abre la puerta a estrategias de **retención y fidelización**.
 
 ---
 
-## 🛠 6. **Tecnologías utilizadas**
+## 🖥 6. Dashboard interactivo
+
+Este proyecto incluye un dashboard ligero construido con **Streamlit + Plotly**.
+
+Para ejecutarlo:
+
+```bash
+streamlit run src/dashboard.py
+```
+
+El dashboard muestra:
+
+- KPIs principales  
+- Revenue mensual  
+- Top productos  
+- Revenue por ciudad  
+
+---
+
+## 🛠 7. Tecnologías utilizadas
 
 - Python (pandas, SQLAlchemy, Plotly)  
 - PostgreSQL  
@@ -115,18 +140,19 @@ Esto abre la puerta a estrategias de **retención y fidelización**.
 - Kaleido  
 - Conda  
 - Git & GitHub  
+- Streamlit  
 
 ---
 
-## 🚀 7. **Próximos pasos**
+## 🚀 8. Próximos pasos
 
-- Dashboard ligero en Python (Plotly Dash o Streamlit)  
+- Agregar filtros interactivos al dashboard  
 - Segmentación avanzada de clientes  
 - Modelos predictivos (LTV, churn, forecasting)  
 
 ---
 
-## 👤 8. **Autor**
+## 👤 9. Autor
 
 **Federico Wuttke**  
 Proyecto desarrollado como parte de un portfolio profesional de análisis de datos.
